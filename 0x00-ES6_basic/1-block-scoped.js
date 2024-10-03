@@ -1,6 +1,11 @@
-const taskBlock = (trueOrFalse) => {
-  const task = trueOrFalse ? true : false;
-  const task2 = trueOrFalse ? false : true;
+let taskBlock (trueOrFalse) => {
+  let task = false;
+  let task2 = true;
+
+  if (trueOrFalse) {
+     task = true;
+     task2 = false;
+  }
 
   return [task, task2];
 };
